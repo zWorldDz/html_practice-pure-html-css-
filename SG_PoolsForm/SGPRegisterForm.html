@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="SGPRegisterForm.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+     <div id="noticeboardbg">
+        <div class="noticeboard">
+            <span>If you notice that you or somebody you know may be gambling excessively, call the <strong><a href="#">National Problem Gambling Helpline</a></strong>today at 1800-6-668-668.</span>
+        </div>
+        </div>
+        <div id="logobannerbg">
+        <div class="logobanner">
+        <div class="leftlogo"><img src="Logo_of_Singapore_Pools.svg.png"></div>    
+        <div class="rightlink"><a href="#">Responsible Play</a><a href="#">Our Services</a><a href="#">FAQ</a><a href="#">Corporate</a>            
+        <label class="switch"><input type="checkbox" checked><div class="slider"></div></label></div>
+        <div class="rightlinkhide"><a href="#">Sports</a><a href="#">Lottery</a>
+        <button id="dropdownbtn" onclick="displayHideContent()">☰</button>
+        </div>
+        </div>
+        <div id="hidecontent2">
+        <ul>
+        <li><a href="#">Responsible Play</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Corporate</a></li>
+        </ul>    
+        </div>
+        </div>
+        <nav>
+            <div id="navbg">
+            <div class="leftnav">
+                <ul>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Lottery</a></li>
+                    <li><a class="active" href="#">Account</a></li>
+                </ul>
+            </div>
+            <div class="rightfunction">
+                <ul>
+                    <li><input id="LoginUserName" type="text" placeholder="Username"></li>
+                    <li><input id="LoginPassword" type="password" placeholder="Password"></li>
+                    <li><button class="login">LOGIN</button></li>
+                    <li><a id="ForgotPassword" href="#">Forgot Login?</a></li>
+                    <li><button  class="signup">SIGN UP</button></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        
+        <div id="contentbg">
+            <div class="content">
+                <div class="topdesc"><strong>ACCOUNT INFORMATION</strong>
+                                     <br><span><em>all fields are mandatory, unless otherwise indicated.</em></span>
+                                <hr class="line">
+
+                </div>
+                
+                    <form>
+                        <div class="accountinfo">
+                            <label for="Name" class="inputlabel" id="NameLabel">Name (as per NRIC or official document containing FIN)</label>
+                            <input type="text" name="Name" id="Name" class="inputtext" onblur="hasNumbers()"/>
+                            <i class="fa fa-check-circle checked"></i>
+                            <span id="NameSpan" class="noticespan">Enter your name as per NRIC or official document containing FIN.</span>
+                            <br>
+                            <label for="Nric" class="inputlabel" id="NricLabel">NRIC Number or FIN</label>
+                            <input type="text" name="Nric" id="Nric" class="inputtext" onblur="checkNric()"/>
+                            <i class="fa fa-check-circle checked"></i><br>
+
+                            
+                            <label  class="inputlabel">Nationality</label>
+                            <select class="inputtext">
+                                <option value="Singapore" selected>Singapore</option>
+                                <option value="Malaysia">Malaysia</option>
+                            </select><br>
+                            <label class="inputlabel">Gender</label>
+                            <input type="radio" name="Gender" id="Male" value="Male" checked/>Male
+                            <input type="radio" name="Gender" id="Female" value="Female"/>Female<br>
+                            
+                            <label for="DateOfBirth" class="inputlabel" id="DateLabel">Date Of Birth</label>
+                            <input type="date" name="DateOfBirth" id="DateOfBirth" class="inputtext" onblur="checkDate()">
+                            <i class="fa fa-check-circle checked"></i>
+                            <span id="DateSpan" class="noticespan"></span><br>
+                             
+                            <label for="Email" class="inputlabel" id="EmailLabel">Email Address</label>
+                            <input type="email" name="Email" id="Email"  class="inputtext" onblur="checkEmail()"/>
+                            <i class="fa fa-check-circle checked"></i>
+                            <span id="EmailSpan" class="noticespan">Enter a valid email address(e.g name@domain.com)</span><br>                            
+                            
+                            <label for="MobileNumber" class="inputlabel" id="MobileNumberLabel">Mobile Number</label>
+                            <span class="sixfive">+65</span><input type="text" name="MobileNumber" id="MobileNumber" class="inputtext" onblur="checkMobileNumber()"/>
+                            <i class="fa fa-check-circle checked"></i>
+                            <span id="MobileNumberSpan" class="noticespan">Enter a valid Mobile Number</span><br>
+                        </div>
+                         
+                        <hr class="line">
+                        <div class="address">
+                            <label class="smalltitle">SINGAPORE RESIDENTIAL ADDRESS</label><br>
+                            <label for="PostCode" class="inputlabel" id="PostCodeLabel">Post Code</label>
+                            <input type="text" name="PostCode" id="PostCode" class="inputtext" onblur="checkPostCode()"/><i class="fa fa-check-circle checked"></i>
+                            <span id="PostCodeSpan"  class="noticespan"></span><br>
+                                                        
+                            <label for="StreetName" class="inputlabel" id="StreetNameLabel">Street Name</label>
+                            <input type="text" name="StreetName" id="StreetName" class="inputtext" onblur="checkStreetName()"/>
+                            <i class="fa fa-check-circle checked"></i>
+                            <br>
+                            
+                            <label for="BuildingName" class="inputlabel" id="BuildingNameLabel">Building Name</label>
+                            <input type="text" name="BuildingName" id="BuildingName" class="inputtext" onblur="checkBuildingName()"/>
+                            <i class="fa fa-check-circle checked"></i>
+                            <br>
+                            
+                            <label for="UnitNumber " class="inputlabel">Level and Unit Number (if applicable)</label>
+                            <input type="text" name="UnitNumber" id="UnitNumber" class="inputtext"/><br>
+                        <hr class="line">
+                            <label class="inputlabel">Preferred Mode of Communication (Optional)</label>
+                            <input type="checkbox" name="PreferredCommunication" id="Email" value="Email"/>Email
+                            <input type="checkbox" name="PreferredCommunication" id="SMS" value="SMS"/>SMS
+                            <input type="checkbox" name="PreferredCommunication" id="Phone" value="Phone"/>Phone
+                            <input type="checkbox" name="PreferredCommunication" id="Post" value="Post"/>Post
+                        </div>
+                        <div id="logininfo">
+                        <div class="topdesc"><strong>LOGIN INFO</strong></div>
+                        <hr class="line">
+                        <label class="smalltitle">LOGIN FOR ONLINE BETTING</label><br>
+                        <label for="UserName" class="inputlabel" id="UserNameLabel">Create Username</label>
+                        <input type="text" name="UserName" id="UserName" class="inputtext" onblur="checkUserName()"/>
+                        <i class="fa fa-check-circle checked"></i>
+                        <span id="UserNameSpan" class="noticespan">Your username is case-sensitive</span><br>
+                        
+                        <label for="Password" class="inputlabel" id="PasswordLabel">Create Password</label>
+                        <input type="password" name="Password" id="Password" class="inputtext" onblur="checkPassword()"/><i class="fa fa-check-circle checked"></i>
+                        <span id="PasswordSpan" class="noticespan">Password must be at least 8 characters long and it is case-sensitive.</span>
+                        <br>
+                            
+                        <label for="Password2" class="inputlabel" id="PasswordLabel2">Re-enter Password</label>
+                        <input type="password" name="Password2" id="Password2" class="inputtext" onblur="checkPassword2()"/><i class="fa fa-check-circle checked"></i><span id="PasswordSpan2" class="noticespan"></span><br>  
+                        <label class="smalltitle">LOGIN FOR PHONE BETTING</label><br>
+                            
+                        <label for="Pin" class="inputlabel" id="PinLabel">Create PIN</label>
+                        <input type="password" name="Pin" id="Pin"class="inputtext" onblur="checkPin()"/><i class="fa fa-check-circle checked"></i><span id="PinSpan" class="noticespan">PIN must be 6 numbers (0-9).
+</span><br>
+                            
+                        <label for="Pin2" class="inputlabel" id="PinLabel2">Re-enter PIN</label>
+                        <input type="password" name="Pin2" id="Pin2"class="inputtext" onblur="checkPin2()"/><i class="fa fa-check-circle checked"></i><span id="PinSpan2" class="noticespan"></span><br>
+                        </div>    
+                        
+                        <div class="topdesc"><strong>LIMIT MANAGEMENT</strong></div>
+                        <hr class="line">
+                        <label class="inputlabel">Daily Funding Limit</label>
+                            <select id="FundingLimit" class="select" onblur="checkFunding()">
+                                <option selected disabled>Select</option>
+                                <option value="300">$300</option>
+                                <option value="500">$500</option>
+                                <option value="1000">$1000</option>
+                                <option value="Other">Other</option>
+                            </select><input type="text" name="FundingLimit" id="FundingLimitInput" class="selecttext" disabled placeholder="$"/><br>
+
+                        <label class="inputlabel">Daily Expenditure Limit</label>
+                            <select id="ExpenditureLimit" class="select" onblur="checkExpenditure()">
+                                <option selected disabled>Select</option>
+                                <option value="50">$50</option>
+                                <option value="75">$70</option>
+                                <option value="100">$100</option>
+                                <option value="Other">Other</option>
+                            </select><input type="text" name="ExpenditureLimit" id="ExpenditureLimitInput" class="selecttext" disabled placeholder="$"/><br>
+                        <div class="topdesc"><strong>DECLARATION</strong></div>
+                        <hr class="line">
+                        <div class="declaration">
+                        <ol> 
+                            <input type="checkbox" name="DeclarationBox" id="DeclarationBox" value="Declared"/><span class="byselecting">By selecting 'Register', I declare that:</span>
+                            <li><span class="points">I currently reside in and maintain a place of abode at the address provided within this Online Registration Form, and I undertake to inform Singapore Pools should there be any change to the address of my residence;</span></li>
+                            <li><span class="points">By using the service, I confirm that I am not a resident of the United States of America or of any country whose laws as are applicable to myself, which prohibit the purchase of Singapore Pools’ products;</span></li>
+                            <li><span class="points">I am not an undischarged bankrupt, and I will inform Singapore Pools should any bankruptcy notice or bankruptcy petition be served on me or if any act of bankruptcy has been committed by me;</span></li>
+                            <li><span class="points">I am not under any Casino Exclusion Order and I will inform Singapore Pools if any Casino Exclusion Order has been served on me;</span></li>
+                            <li><span class="points">I hereby consent to Singapore Pools conducting credit, probity and other verification checks on me through third-party sources such as the National Council on Problem Gambling ("NCPG") and law enforcement authorities and to collect, use and/or disclose any information on or relating to me and/or my Betting Account. I further consent to Singapore Pools using or disclosing information on or relating to me and/or my Betting Account to the NCPG for the purposes of such checks, and to the NCPG providing information relating to any exclusion orders made against me under Sections 162, 165, 165A(1)(a), 165A(1)(b) and 165C of the Casino Control Act (Cap 33A) to Singapore Pools for such purposes; and</span></li>
+                            <li><span class="points">I agree to be bound by the Account Opening and Operating Terms and Conditions and the respective Game Rules which I have read and understood.</span></li>
+                        </ol>
+                        </div>
+                        <div id="btn"><button type="submit" class="submitbtn">REGISTER</button></div>
+                </form>
+            </div>
+        </div>
+        
+        <footer>
+            <div id="footercontent">
+            <ul class="ul1">
+            <li class="lititle">Sports</li>
+            <li><a href="">Live Betting</a></li>
+            <li><a href="">Football</a></li>
+            </ul>    
+            <ul class="ul2">
+            <li class="lititle">Lottery</li>
+            <li><a href="">4D</a></li>
+            <li><a href="">TOTO</a></li>
+            </ul>    
+            <ul class="ul3">
+            <li class="lititle">Accounts</li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sign Up</a></li>
+            </ul>    
+            <ul class="ul4">
+            <li class="lititle">Our Services</li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Locate Outlets</a></li>
+            </ul>    
+            </div>
+            <div id="footerdeclaration"><span>© Copyright Singapore Pools
+Any information, statistics or editorials which originate from third-party service providers (e.g. event-related content, venue information, scores, timings or results) and are displayed here, are intended for general information purposes only. Singapore Pools accepts no responsibility for bets placed in reliance on the same. Singapore Pools strongly encourages our customers to play responsibly. Customers should play our games just for a little flutter and it must not adversely affect their finances or lifestyle. Our game rules do not allow any person under the age of 18 years to place a bet or claim a winning ticket prize. Account betting is only available to those above 21 years old. Read our Terms and Conditions on the use of this website. Please exit this website if you are under 18.</span></div>
+        </footer>
+    <script src="SGPRegisterForm.js"></script>
+    </body>
+</html>

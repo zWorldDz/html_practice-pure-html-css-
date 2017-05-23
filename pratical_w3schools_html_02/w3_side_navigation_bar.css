@@ -1,0 +1,38 @@
+body
+{
+    margin: 0;
+}
+ul{
+    background-color: #333;
+    list-style-type: none;
+    height: 100%;
+    width: 18%;
+    margin: 0;
+    padding: 0;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+li .active{
+ background-color: #4CAF50;
+}
+
+li a:hover:not(.active){
+    color: black;
+    background-color: #f3f3f3;
+}
+
+.dropdown-content{
+    display: none;
+    text-align: left;
+}
+
+
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+

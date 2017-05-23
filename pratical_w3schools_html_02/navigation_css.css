@@ -1,0 +1,34 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:dimgrey;
+}
+
+li{
+    float: left;
+}
+li a{
+    color: beige;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    width: 100px;
+}
+
+li a:hover{
+    background-color:fuchsia;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content
+{
+    display: block;
+}

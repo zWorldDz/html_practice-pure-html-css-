@@ -1,0 +1,440 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+label{
+    color: grey;
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.noticeboard{
+    height: 4%;
+    margin: auto;
+    width: 70%;
+}
+#noticeboardbg{
+    padding: 8px;
+    overflow: hidden;
+    background-color: #F5C52E;
+}
+#noticeboardbg span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+}
+#noticeboardbg a{
+    color: #30748C;
+    text-decoration: none;
+}
+#noticeboardbg a:hover{
+    color: black;
+    text-decoration:underline;
+}
+.leftlogo img{
+    width: 70px;
+}
+.leftlogo {
+    width: 28%;
+    float: left;
+}
+.logobanner{
+    overflow: hidden;
+    margin: auto;
+    width:80%;
+}
+.rightlink{
+    display: inline-block;
+    width: 55%;
+    float: right;
+}
+#logobannerbg{
+    height: 100px;
+   background-color: #15437B; 
+}
+.rightlink a{
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    padding: 5%;
+}
+.rightlink a:hover{
+    text-decoration: underline;
+}
+nav{
+    background-color: #3D79B4;
+    height: 50px;
+}
+
+#navbg{
+    overflow: hidden;
+    width: 88%;
+    margin: auto;
+}
+
+#navbg ul{
+
+        display: inline-block;
+    list-style-type: none;
+}
+.leftnav{
+    min-width: 25%;
+    float: left;
+}
+
+.leftnav li{
+    float: left;
+    display: inline;
+}
+
+.leftnav a:not(.active){
+    padding: 17px;
+    text-decoration: none;
+    color: white;
+}
+
+.rightfunction{
+    display: inline-block;
+    float: right;
+    width: 60%;
+}
+.rightfunction ul{
+    margin-left: 5%;
+}
+.rightfunction li{
+    display: inline;
+}
+.active{
+    padding: 17px;
+    text-decoration: none;
+    color: #3483E3;
+    background-color: #f3f3f3;
+}
+.leftnav a:not(.active):hover{
+background-color: #3483E3;
+}
+
+.login{
+    color: white;
+    background-color: #509FFF;
+    border: none;
+    width:80px;
+    height: 25px;
+}
+.signup{
+
+    color: white;
+    background-color: #E66200;
+    border: none;
+    width:80px;
+    height: 25px;}
+.rightfunction a{
+    color: white;
+    text-decoration: none;
+}
+.rightfunction button:hover{
+    cursor: pointer;
+}
+#contentbg{
+    padding-bottom: 50px;
+    background-color: #f3f3f3;
+}
+.content{
+    overflow: hidden;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.line{
+    width: 95%;
+    display: block;
+    border: 1px solid #f3f3f3;
+}
+.topdesc {
+    margin: 3%;
+}
+.topdesc strong{
+    color: #4CA5FF;
+}
+.topdesc  span{
+    font-size: 12px;
+    color:grey;
+}
+.inputlabel{
+    margin-top: 30px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+.inputtext{
+    border-style: solid;
+    height: 25px;
+    width: 25%;
+    border-color: #D1D1D1;
+    border-radius: 5px;
+}
+.smalltitle{
+    font-size: 15px;
+    text-align: right;
+}
+.declaration p{
+    color: #5B5B5B;
+    font-size: 13px;
+    font-family: Verdana, Geneva, sans-serif;
+
+}
+.accountinfo span{
+    font-family: Verdana, Geneva, sans-serif;
+    color: grey;
+    font-size: 12px;
+}
+.inputtext:focus{ 
+    border:1px solid #0091FB;
+    outline: none;
+    background-color:  #9ED6FF;
+}
+.checked{
+    color: transparent;
+}.sixfive{
+    display: inline-block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#MobileNumber{
+    width: 22%;
+}
+#PostCode{
+    width: 150px;
+}
+#logininfo span{
+    font-family: Verdana, Geneva, sans-serif;
+    color: grey;
+    font-size: 12px;}
+
+.byselecting{
+    font-family: Verdana, Geneva, sans-serif;
+    color: #3B3B3B;
+    font-size: 18px;
+    font-weight: bold;
+}
+.noticespan{
+    width: 35%;
+    display: inline-block;
+}
+.points{
+    
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+    font-size: 20px;
+}
+.declaration {
+    margin: auto;
+    width: 80%;
+}
+.declaration li{
+    
+    margin-top: 20px;
+}
+
+.selecttext{
+    margin-left: 5px;
+    border-style: solid;
+    height: 20px;
+    width: 10%;
+    border-color: #D1D1D1;
+    border-radius: 5px;
+}
+.select{
+    height: 25px;
+    width: 12%;
+    border-color: #D1D1D1;
+    border-radius: 5px;
+}
+.submitbtn{
+    border: none;
+    background-color: #333;
+    color: white;
+    height: 50px;
+    width: 150px;
+}
+#btn{
+    width: 12%;
+    margin: auto;
+}
+#footercontent{
+    
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+footer{
+        font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #333;
+}
+
+#footercontent ul{
+    display: inline-block;
+    width: 15%;
+    list-style-type: none;
+}
+#footercontent a{
+    text-decoration: none;
+    color: white;
+}
+#footercontent a:hover{
+    text-decoration: underline;
+}
+#footerdeclaration span{
+    font-size: 11px;
+}
+#footerdeclaration {
+    margin: auto;
+    width: 80%;
+}
+
+.login,.signup{
+    border-radius: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    border-radius: 50px;
+    margin-top: 20px;
+    height: 23px;
+    width:50px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+
+.slider:before {
+  border-radius: 50px;
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+#LoginUserName,#LoginPassword{
+    height: 22px;
+    border: 2px;
+}
+
+.rightlinkhide{
+    margin-left: 22%;
+    position: absolute;
+    display: none;
+    width: 35%;
+    float: right;
+}
+.rightlinkhide a{
+    
+    text-align: right;
+    font-size: 100%;
+    text-decoration: none;
+    color: white;
+    display:inline-block;
+    padding: 35px;;
+}
+#dropdownbtn{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 2px 5px;
+    background-color: inherit;
+}
+#hidecontent2{
+    display: none;
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    background-color: #15437B; 
+}
+#hidecontent2 ul{
+    
+    list-style-type: none;
+}
+#hidecontent2 li{
+    padding: 20px;
+    color: white;
+}
+#dropdownbtn:hover{
+    cursor: pointer;
+}
+     #hidecontent2 a{
+            text-decoration: none;
+            color: white;
+    }     
+#hidecontent2 a:hover{
+            text-decoration: underline;
+    }
+@media screen and (max-width:1350px) 
+{
+    #LoginUserName,#LoginPassword,#ForgotPassword,.rightlink{
+        display: none;
+    }
+    .rightfunction{
+        width: 45%;
+    }
+    .noticeboard{
+        font-size: 30px;
+    margin: auto;
+    width: 100%;
+    }
+    .leftnav{
+        display: none;
+    }
+    .rightlinkhide{
+    display: inline-block;
+    }
+    
+.content{
+    width: 100%;
+}
+    label{
+        font-size:  18px;
+}
+

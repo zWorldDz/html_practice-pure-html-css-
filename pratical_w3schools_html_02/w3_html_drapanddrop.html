@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <style>
+    .div {
+        width: 50px;
+        height:35px;
+        margin:10px;
+        padding:1px;
+        border: 1px solid black;
+        }
+    </style>
+
+               /**  <script>
+
+    function allowDrop(ev)
+        {
+            ev.preventDefault();
+        }
+    function drag(ev)
+        {
+            ev.dataTransfer.setData("text",ev.target.id);
+        }
+    function drop(ev)
+        {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+        
+    localStorage.setItem("name","Smith")
+        alert( localStorage.getItem("name"););
+    </script>       **/
+
+</head>
+<body>
+    <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>    
+    <div class="div" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+    <img src="img_w3slogo.gif" draggable="true" ondragstart="drag(event)" id="xx" width="88" height="31">
+</body>
+</html>

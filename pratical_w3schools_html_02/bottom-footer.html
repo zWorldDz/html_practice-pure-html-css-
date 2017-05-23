@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="bottom-footer.css" type="text/css">
+    </head>
+    <body>
+    <p>Enter a number and click OK:</p>
+<form>
+<input id="id1" type="number" min="100" max="300" required>
+<button type="submit" onclick="myFunction()">OK</button>
+</form>
+<p>If the number is less than 100 or greater than 300, an error message will be displayed.</p>
+
+<p id="demo"></p>
+
+<script>
+    
+    function myFunction(){
+    var x = document.getElementById("id1");
+    if(x.checkValidity() == false)
+        document.getElementById("demo").innerHTML = x.validationMessage;
+}
+
+</script>
+</body>
+<div class="demo">
+</div>
+<div class="footer"> <strong>not fixed footer</strong>.</div>
+    </html>

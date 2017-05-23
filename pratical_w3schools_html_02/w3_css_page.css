@@ -1,0 +1,18 @@
+.page{
+    display: inline-block;
+}
+
+.page a{
+    text-decoration: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.page a:hover{
+    background-color: beige;
+}
+
+.page a.active{
+    background-color: #4CAF50;
+}

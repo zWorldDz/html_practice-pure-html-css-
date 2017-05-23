@@ -1,0 +1,38 @@
+input[type=text],select{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    outline: none;
+}
+
+input[type=submit]{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+    background-color: 4CAF50;
+    color:white;
+    border: none;
+    border-radius: 10px
+}
+
+body{
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 0;
+    width: 50%;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+#register{
+    border-radius: 15px;
+    padding: 15px;
+        background-color: #f2f2f2;
+}
+
+input[type=submit]:hover{
+    background-color:darkblue;
+    color: black;
+    cursor:pointer;
+}
